@@ -18,7 +18,6 @@
         <activity android:name=".SubIndustry" />
         <activity android:name=".Industry" />
         <activity android:name=".ImageParser" />
-        <activity android:name=".Calculation"></activity>
     </application>
 
 </manifest>

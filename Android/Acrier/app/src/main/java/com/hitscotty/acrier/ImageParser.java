@@ -17,6 +17,8 @@ public class ImageParser extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image_parser);
+        Intent intent = getIntent();
+
     }
 
     public void dispatchTakePictureIntent(View view) {

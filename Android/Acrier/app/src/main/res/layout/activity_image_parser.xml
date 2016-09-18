@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:text="Submit"
         android:id="@+id/submit_button"
-        android:onClick="sumbitImage"
+        android:onClick="sumbit"
         android:layout_alignBottom="@+id/space"
         android:layout_centerHorizontal="true" />
 
