@@ -34,7 +34,7 @@
         coords.push(temp);
         console.log(coords);
         $('#map').empty();
-        $('#scripts').empty().append('<script async defer src="https://maps.googleapis.com/maps/api/js?key='+ apikey+'&callback=initMap"></script>')
+        $('#scripts').empty().append('<script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>')
 
       })
 
