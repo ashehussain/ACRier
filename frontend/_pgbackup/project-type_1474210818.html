@@ -2,7 +2,7 @@
 <html lang="en" style="height:100%;" wp-site wp-site-is-master-page>
     <head> 
         <meta charset="utf-8"> 
-        <title>Project type</title>
+        <title>Pinegrow Bootstrap Blocks</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <meta name="keywords" content="pinegrow, blocks, bootstrap" />
         <meta name="description" content="My new website" />
@@ -35,52 +35,35 @@
                                         <input class="control-label" type="checkbox" value="">        Carbon Offset        
                                     </label>                                     
                                     <label class="control-label" for="formInput467">
-                                        <h3>New Project</h3>
+                                        <h5>Project type</h5>
                                         <label> 
                                             <input class="control-label" type="checkbox" value="">       Sustainability        
                                         </label>
-                                    </label>  
-                                    <h6>Sectoral scope</h6>                                   
-                                    <select id="sectoral-scope" class="form-control"> 
-                                        <option> Agriculture, Forestry, Land Use</option>                                         
-                                        <option>Energy generation</option>                                         
-                                        <option>Transport</option>
-                                        <option>Fugitive emissions from industrial gases</option>
+                                    </label>                                     
+                                    <select id="formInput467" class="form-control"> 
+                                        <option>Farming</option>                                         
+                                        <option>Trucking</option>                                         
+                                        <option>More</option>                                         
                                     </select>
-                                    <h6>Methodology</h6>
-
-                                    <select id="method" class="form-control">
-                                        <label>label</label>                                         
-                                        <option> Rice Management Systems</option>                                         
-                                        <option>Switch from non-renewable biomass for thermal applications</option>
-                                        <option>Improved Efficiency of Vehicle Fleets</option>                                         
-                                        <option>Conversion of High-Bleed Pneumatic Controllers in Oil & Natural Gas Systems</option>                                         
-                                    </select>
-                                    <!-- end of project type & name -->
-                                    <!-- div for marming #acres.. message map -->
                                 </div>
                                 <div id="message"></div>
                                 <form method="post" action="js/contact-form.php" name="contactform" id="contactform">
-                                    <label class="date-label" for="formInput780">Start date</label>
-                                    <input type="date" class="form-control" placeholder="Date">
-                                    <div class="form-group"> </div>
                                     <div class="form-group">
                                         <input name="project-name" id="project-name" type="text" value="" placeholder="Project Name" class="form-control" />
                                     </div>
                                     <h5>Description</h5>
                                     <div class="form-group">
-                                        <input name="description" id="acres" type="text" value="" placeholder="Number of acres" class="form-control" />
+                                        <input name="description" id="email" type="text" value="" placeholder="Number of acres" class="form-control" />
                                     </div>
                                     <div class="form-group">
-                                        <textarea name="comments" id="comments" class="form-control" rows="3" placeholder="Comments" id="textArea"></textarea>
+                                        <textarea name="comments" id="comments" class="form-control" rows="3" placeholder="Message" id="textArea"></textarea>
+                                        <input name="longitude" id="long" type="text" value="" placeholder="Longitude" class="form-control" />
+                                        <input name="Latitude" id="latitude" type="text" value="" placeholder="Latitude" class="form-control" />
                                     </div>
-                                    <!-- empty div -->
                                     <div class="form-group">
-                                        <div class="clearfix clear-columns"></div>
                                         <div class="editContent">
 </div>
                                     </div>
-                                    <!-- div for button -->
                                     <div class="form-group">
                                         <button class="btn btn-primary" type="submit" id="cf-submit" name="submit">Send</button>
                                     </div>
