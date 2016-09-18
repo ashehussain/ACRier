@@ -21,8 +21,18 @@
     </style>
   </head>
   <body>
+    <div id="input">
+      <form id='geoCodeForm'>
+        <input type="text" name="latlong0" placeholder="latlng" >
+        <input type="text" name="latlong1" placeholder="latlng" >
+        <input type="text" name="latlong2" placeholder="latlng" >
+        <input type="submit" id='submit' name="submit">
+      </form>
+      <input type="submit" value='addNewLatlong' id='addNewLatlong' name="addNewLatlong">
+      <input type="submit" value='RemoveNewLatlong' id='removeNewLatlong' name="addNewLatlong">
+      
+    </div>
     <div id="map"></div>
     <div id='scripts' ></div>
-    
   </body>
 </html>
