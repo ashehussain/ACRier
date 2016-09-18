@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Carbon Offset Project</title>
+    <script src="https://unpkg.com/jquery@3.1.0/dist/jquery.min.js"></script>
+    <script src="carbonoffsetVerify.js" defer></script>
+</head>
+
+<body>
+    <div>
+        <form action="change.asp" id="form">
+            <ol>
+                <p>Carbon Offset Project Verification Process: </p>
+                <br>
+                <li>Practice Change Implemented:</li>
+                <br>
+                <input type="checkbox" name="practice1" value="Removal of rice straw from the field after harvest"> Removal of rice straw from the field after harvest
+                <br>
+                <input type="checkbox" name="practice2" value="drainage at the end of growing season" checked> Early drainage at the end of growing season
+                <br>
+                <input type="checkbox" name="practice3" value="Intermittent flooding during growing season" checked> Intermittent flooding during growing season
+                <br>
+                <input type="checkbox" name="practice4" value="Increased water and/or energy use efficiency" checked> Increased water and/or energy use efficiency
+                <br>
+                <br>
+                <br>
+                <li>Reporting Year:</li>
+                <br>
+                <input type="date" name="Start_date" >
+                <input type="date" name="End_date" >
+                <button>Upload Supporting documents</button>
+                <br>
+                <br>
+                <li>Climate Data:</li>
+                <br>
+                <button>Upload Supporting Documents</button>
+                <br>
+                <br>
+                <li>Soil data:</li>
+                <br>
+                <button>Upload Supporting Documents</button>
+                <br>
+                <br>
+                <li>Plant time:</li>
+                <br>
+                <p>From:</p>
+                <input type="date" name="dateFrom" value="dateFrom">
+                <br>
+                <p>To:</p>
+                <input type="date" name="dateTo" value="dateFrom">
+            </ol>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
+<!-- 
+Practice Change Implemented
+[Dropdown Menu]
+Removal of rice straw from the field after harvest
+Early drainage at the end of growing season
+Intermittent flooding during growing season
+Increased water and/or energy use efficiency
+
+
+Start Date*     [Upload]  [View]
+End Date*      [Upload]   [View]
+
+Climate Data*  
+[Upload]   [View]
+
+Soil Data*  
+[Upload]   [View]
+
+
+Plant Time* 
+Month                                  Day          
+[Dropdown (1-12)]             [Dropdown (1-31)]  
+[Upload]   [View]
+
+Asterisks a placed where question marks should be. When someone hovers over the question mark a pop up of the description from the rice cultivation excel sheet should be used  -->
