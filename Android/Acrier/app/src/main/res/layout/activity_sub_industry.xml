@@ -14,36 +14,41 @@
     android:layout_height="wrap_content"
     android:text="Carbon Emission"
     android:id="@+id/textView"
-    android:layout_centerHorizontal="true"
+    android:textSize="100px"
     android:layout_alignParentTop="true"
-    android:textSize="100px" />
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="39dp" />
 
-    <ImageButton
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:id="@+id/reportlist"
+        android:choiceMode="none"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
         android:layout_width="fill_parent"
-        android:layout_height="102dp"
-        android:id="@+id/imageButton"
+        android:layout_height="80dp"
+        android:text="Create a new Report"
+        android:id="@+id/newReport"
         android:onClick="getImageParser"
-        android:layout_gravity="left|center_vertical"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="59dp" />
+        android:layout_marginRight="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" /><![CDATA[
 
-    <ImageButton
-        android:layout_width="fill_parent"
-        android:layout_height="102dp"
-        android:id="@+id/imageButton12"
-        android:layout_gravity="left|center_vertical"
-        android:layout_below="@+id/imageButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp" />
 
-    <ImageButton
-        android:layout_width="fill_parent"
+
+
+
+    android:layout_width="fill_parent"
         android:layout_height="102dp"
         android:id="@+id/imageButton13"
         android:layout_gravity="left|center_vertical"
         android:layout_below="@+id/imageButton12"
         android:layout_alignEnd="@+id/imageButton12" />
 
+
+
+]]>
 </RelativeLayout>
