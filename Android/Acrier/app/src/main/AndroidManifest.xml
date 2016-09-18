@@ -18,7 +18,9 @@
         <activity android:name=".SubIndustry" />
         <activity android:name=".Industry" />
         <activity android:name=".ImageParser" />
-        <activity android:name=".Calculation"></activity>
     </application>
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
 </manifest>

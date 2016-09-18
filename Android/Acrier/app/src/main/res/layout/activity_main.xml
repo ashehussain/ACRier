@@ -7,14 +7,15 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".Industry">
+    tools:context=".Industry"
+    android:background="@color/accent_material_dark">
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="phone"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/phoneLogin"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="220dp"
@@ -26,7 +27,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/editText2"
+        android:id="@+id/passwordLogin"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:hint="PASSWORD" />
@@ -36,9 +37,9 @@
         android:layout_width="300px"
         android:layout_height="wrap_content"
         android:text="Login"
-        android:id="@+id/button"
-        android:layout_marginTop="66dp"
-        android:layout_below="@+id/editText2"
+        android:id="@+id/login"
+        android:onClick="login"
+        android:layout_alignTop="@+id/register"
         android:layout_alignParentStart="true" />
 
     <TextView
@@ -47,17 +48,17 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="ACR&apos;ier"
         android:id="@+id/textView2"
-        android:layout_marginBottom="108dp"
-        android:layout_alignBottom="@+id/editText"
-        android:layout_centerHorizontal="true"
-        android:textSize="100px" />
+        android:textSize="100px"
+        android:layout_marginTop="180px"
+        android:layout_centerHorizontal="true" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="300px"
         android:layout_height="wrap_content"
         android:text="Register"
-        android:id="@+id/button2"
-        android:layout_alignTop="@+id/button"
+        android:id="@+id/register"
+        android:layout_marginTop="85dp"
+        android:layout_below="@+id/passwordLogin"
         android:layout_alignParentEnd="true" />
 </RelativeLayout>
