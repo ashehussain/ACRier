@@ -12,71 +12,37 @@
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Farming"
+    android:text="Carbon Emission"
     android:id="@+id/textView"
     android:layout_centerHorizontal="true"
     android:layout_alignParentTop="true"
     android:textSize="100px" />
 
-<FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="500dp"
-    android:layout_alignParentBottom="true"
-    android:layout_alignParentStart="true">
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="102dp"
+        android:id="@+id/imageButton"
+        android:layout_gravity="left|center_vertical"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp" />
 
     <ImageButton
-        android:layout_width="118dp"
-        android:layout_height="180dp"
-        android:id="@+id/imageButton2"
-        android:layout_gravity="center_horizontal|top" />
+        android:layout_width="fill_parent"
+        android:layout_height="102dp"
+        android:id="@+id/imageButton12"
+        android:layout_gravity="left|center_vertical"
+        android:layout_below="@+id/imageButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
 
     <ImageButton
-        android:layout_width="118dp"
-        android:layout_height="150dp"
-        android:id="@+id/imageButton3"
-        android:layout_gravity="right|top" />
-
-    <ImageButton
-        android:layout_width="118dp"
-        android:layout_height="200dp"
-        android:id="@+id/imageButton4"
-        android:layout_gravity="left|center_vertical" />
-
-    <ImageButton
-        android:layout_width="118dp"
-        android:layout_height="150dp"
-        android:id="@+id/imageButton5"
-        android:layout_gravity="center" />
-
-    <ImageButton
-        android:layout_width="118dp"
-        android:layout_height="200dp"
-        android:id="@+id/imageButton6"
-        android:layout_gravity="right|center_vertical" />
-
-    <ImageButton
-        android:layout_width="118dp"
-        android:layout_height="150dp"
-        android:id="@+id/imageButton7"
-        android:layout_gravity="left|bottom" />
-
-    <ImageButton
-        android:layout_width="118dp"
-        android:layout_height="180dp"
-        android:id="@+id/imageButton8"
-        android:layout_gravity="center_horizontal|bottom" />
-
-    <ImageButton
-        android:layout_width="118dp"
-        android:layout_height="150dp"
-        android:id="@+id/imageButton9"
-        android:layout_gravity="right|bottom" />
-
-    <ImageButton
-        android:layout_width="118dp"
-        android:layout_height="150dp"
-        android:id="@+id/imageButton10"
-        android:layout_gravity="left|top" />
-</FrameLayout>
+        android:layout_width="fill_parent"
+        android:layout_height="102dp"
+        android:id="@+id/imageButton13"
+        android:layout_gravity="left|center_vertical"
+        android:layout_below="@+id/imageButton12"
+        android:layout_alignEnd="@+id/imageButton12" />
 
 </RelativeLayout>
