@@ -119,9 +119,9 @@
                 android:layout_height="wrap_content"
                 android:text="Upload"
                 android:id="@+id/button"
+                android:layout_marginTop="35dp"
                 android:layout_below="@+id/imageView"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="56dp" />
+                android:layout_alignStart="@+id/textView6" />
 
             <ImageView
                 android:layout_width="fill_parent"
@@ -140,6 +140,52 @@
                 android:layout_below="@+id/textView3"
                 android:layout_centerHorizontal="true"
                 android:spinnerMode="dropdown" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload"
+                android:id="@+id/button2"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/button3" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload"
+                android:id="@+id/button4"
+                android:layout_marginTop="32dp"
+                android:layout_below="@+id/textView7"
+                android:layout_alignStart="@+id/textView6" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageViewReport"
+                android:layout_below="@+id/button4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/editText"
+                android:layout_above="@+id/button3"
+                android:layout_centerHorizontal="true"
+                android:hint="description" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/editText2"
+                android:layout_below="@+id/textView4"
+                android:layout_alignStart="@+id/editText" />
         </RelativeLayout>
     </LinearLayout>
 </ScrollView>

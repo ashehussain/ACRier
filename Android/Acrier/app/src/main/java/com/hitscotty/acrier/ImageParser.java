@@ -2,11 +2,13 @@ package com.hitscotty.acrier;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.media.Image;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.Spinner;
 
 import java.util.ArrayList;
@@ -15,9 +17,9 @@ import java.util.List;
 public class ImageParser extends AppCompatActivity implements View.OnClickListener {
 
 
-    static final int REQUEST_IMAGE_CAPTURE = 1;
-    private Bitmap imageBitmap = null;
+    static final int REQUEST_IMAGE_CAPTURE = 1886;
     private Spinner spinner;
+    private ImageView imageReport;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +38,10 @@ public class ImageParser extends AppCompatActivity implements View.OnClickListen
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode,resultCode,data);
-        imageBitmap = (Bitmap) data.getExtras().get("data");
+        Bitmap imageBitmap = (Bitmap) data.getExtras().get("data");
+        imageReport = (ImageView) findViewById(R.id.imageViewReport);
+        imageReport.setImageBitmap(imageBitmap);
+
     }
 
     @Override
