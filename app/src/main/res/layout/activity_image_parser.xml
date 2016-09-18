@@ -8,22 +8,23 @@
     android:background="#fff">
 
     <Button
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Take a Photo"
         android:id="@+id/photo_button"
         android:onClick="dispatchTakePictureIntent"
-        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/submit_button"
+        android:layout_alignParentEnd="true"
         android:layout_toEndOf="@+id/submit_button" />
 
     <Button
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"
         android:id="@+id/submit_button"
         android:onClick="sumbitImage"
-        android:layout_alignParentBottom="true"
-        android:layout_toStartOf="@+id/space" />
+        android:layout_alignBottom="@+id/space"
+        android:layout_centerHorizontal="true" />
 
     <Space
         android:layout_width="20px"
@@ -31,5 +32,92 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/space" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Select Type"
+        android:id="@+id/textView4"
+        android:textSize="100px"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        android:id="@+id/button3"
+        android:onClick="dispatchTakePictureIntent"
+        android:layout_alignTop="@+id/submit_button"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/submit_button" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Reporting Year Start"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:layout_above="@+id/photo_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText5"
+        android:layout_below="@+id/textView5"
+        android:layout_alignStart="@+id/editText4"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Question 2?"
+        android:id="@+id/textView6"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/submit_button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Question 3?"
+        android:id="@+id/textView7"
+        android:layout_above="@+id/editText3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp" />
 
 </RelativeLayout>
