@@ -23,11 +23,7 @@
           var sectoralScope = $('#sectoral-scope').val()
 
           json = '{"userId":"' + userId + '","name": "'+ data[4].value + '","projectType": "'+ sectoralScope +'","programType": "Carbon offset","projectStartDate": "'+ data[1].value+'", "methodology" : "' + method + '"}'
-
           console.log(json);
-
-
-      // }
       })
       $('#addNewLatlong').on('click', function() {
           // console.log('hello')

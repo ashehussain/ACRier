@@ -25,8 +25,8 @@ public class SubIndustry extends AppCompatActivity {
 
         /* read from database the report objects */
         List<String> myReports = new ArrayList<String>();
-        for(int i = 0; i < 10; i++){
-            myReports.add("Reports" + i);
+        for(int i = 1; i < 10; i++){
+            myReports.add("Report #: " + i + " " + 00 + "," + 0000);
         }
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(
