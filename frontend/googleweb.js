@@ -1,17 +1,22 @@
       var latLongCounter = 3;
       //variable that will hold your 2d array per project
       // joshua when you go love make sure to empty the array
+      34.388376, -91.527426
+      34.388327, -91.525105
+      34.385991, -91.525177
+      34.385953, -91.527487
       var coords= [
             [
-            {lat: 25.774, lng: -80.190},
-            {lat: 18.466, lng: -66.118},
-            {lat: 32.321, lng: -64.757},
-            {lat: 25.774, lng: -80.190}
+            {lat: 34.391315, lng: -91.531769},
+            {lat: 34.393975, lng: -91.530380},
+            {lat: 34.394081, lng: -91.525158},
+            {lat: 34.391235, lng: -91.525199}
             ],
             [
-            {lat: 25.774, lng: -80.190},
-            {lat: 18.466, lng: -66.118},
-            {lat: 32.321, lng: -65.757}
+            {lat: 34.388376, lng: -91.527426},
+            {lat: 34.388327, lng: -91.525105},
+            {lat: 34.385991, lng: -91.525177},
+            {lat: 34.385953, lng: -91.527487}
             ]
           ];
       $('#addNewLatlong').on('click',function(){
@@ -35,15 +40,14 @@
         console.log(coords);
         $('#map').empty();
         $('#scripts').empty().append('<script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>')
-
-      })
+        })
 
 
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 5,
-          center: {lat: 24.886, lng: -70.268},
-          mapTypeId: 'terrain'
+          zoom: 15,
+          center: {lat: 34.391315, lng: -91.531769},
+          mapTypeId: 'satellite'
         });
 
         // Define the LatLng coordinates for the polygon's path.
