@@ -49,22 +49,38 @@ dispatcher.onGet("/getProjectDetails", function(req, res) {
 /*Create User
 
 User Json
-{
+[{
 	"userName": "liz@example.com",
+  "profileType":"Verifier",
 	"name": {
 		"givenName": "Elizabeth",
 		"familyName": "Smith"
 	},
 	"accountStatus": "Enabled",
-	"password": "new user password",
-	"emails address": "liz@example.com",
+	"password": "password123",
 	"address": {
 		"streetAddress": "1600 Amphitheatre Parkway",
 		"city": "Mountain View",
 		"state": "CA",
 		"zipCode": "94043"
 	}
-}
+},
+{
+	"userName": "Asheik91h@gmail.com",
+  "profileType": "ProjectDev",
+	"name": {
+		"givenName": "Asheik",
+		"familyName": "Hussain"
+	},
+	"accountStatus": "Enabled",
+	"password": "password123",
+	"address": {
+		"streetAddress": "7809 Liberty Ave",
+		"city": "Ozone Park",
+		"state": "NY",
+		"zipCode": "11417"
+	}
+}]
 
 */
 dispatcher.onPost("createUser", function(req, res) {
