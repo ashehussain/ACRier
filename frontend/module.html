@@ -4,22 +4,27 @@
 <head>
     <title>ACRier</title>
     <script src="https://unpkg.com/jquery@3.1.0/dist/jquery.min.js"></script>
-    <script src="app.js" defer></script>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="module.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="module.css">
 </head>
 
 <body>
-    <div>
-        <h1>Login Form</h1>
-        <form action="#">
-            <input type="text" name="username" placeholder="username">
-            <input type="password" name="password" placeholder="password">
-            <span>
-            <input type="checkbox" name="checkbox">
-            <label for="checkbox">remember</label>
-        </span>
-            <input type="submit" value="log in">
-        </form>
+    <div class="container">
+        <div class="control-group">
+            <h1>Type of Project</h1>
+            <label class="control control--checkbox">sustainability certification process
+                <input type="checkbox" checked="checked" />
+                <div class="control__indicator"></div>
+            </label>
+            <label class="control control--checkbox">carbon offset project
+                <input type="checkbox" />
+                <div class="control__indicator"></div>
+                <br>
+                <button id="button">Submit</button>
+        </div>
+        
+        </div>
+    </div>
     </div>
 </body>
 
