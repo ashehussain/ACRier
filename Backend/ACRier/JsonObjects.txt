@@ -1,0 +1,75 @@
+
+********************************************************
+                    JSON OBJECTS
+********************************************************
+
+--------- User Objects Collection -----------
+
+{
+	"username": "userName",
+	"profileType": "profileType",
+	"name": {
+		"givenName": "firstName",
+		"familyName": "lastName"
+	},
+	"accountStatus": "Enabled",
+	"password": "password",
+	"address": {
+		"streetAddress": "streetAddress",
+		"city": "city",
+		"state": "state",
+		"zipCode": "zipCode"
+	}
+}
+
+--------- Project Type Collection -----------
+
+{
+  "Name" : "Energy generation", "Type" : ["Switch from non-renewable biomass for thermal applications"]
+}
+
+{
+  "Name" : "Energy distribution", "Type" : ["Recycling of Transformer Oil"]
+}
+
+{
+  "Name" : "Energy demand", "Type" : ["Energy Efficiency Measures in Thermal Applications of Non-Renewable Biomass", "Low greenhouse gas emitting safe drinking water production systems"]
+}
+
+{
+  "Name" : "Transport", "Type" : ["Improved Efficiency of Vehicle Fleets", "Truck Stop Electrification"]
+}
+
+{
+  "Name" : "Fugitive emissions from industrial gases", "Type" : ["Conversion of High-Bleed Pneumatic Controllers in Oil and Natural Gas Systems", "Replacement of SF6 with Alternate Cover Gas in the Magnesium Industry", "Transition to Advanced Formulation Blowing Agents in Foam Manufacturing and Use", "Use of Certified Reclaimed HFC Refrigerants and Advanced Refrigeration Systems"]
+}
+
+{
+  "Name" : "Waste handling and disposal", "Type" : ["Landfill Methane Collection and Combustion"]
+}
+
+{
+  "Name" : "Agriculture, forestry, land use", "Type" : ["Reduced Use of Nitrogen Fertilizer on Agricultural Crops", "Rice Management Systems", "Afforestation and Reforestation of Degraded Lands", "Improved Forest Management (IFM) for Non-Federal U.S. Forestlands", "Improved Forest Management (IFM) for U.S. Timberlands", "REDD Methodology Modules", "Reducing Emissions from Deforestation and Degradation (REDD) – Avoiding Planned Deforestation", "Avoided Conversion of Grasslands and Shrublands to Crop Production", "Compost Additions to Grazed Grasslands", "Restoration of Degraded Wetlands of the Mississippi Delta"]
+}
+
+{
+  "Name" : "Livestock", "Type" : ["Grazing Land and Livestock Management"]
+}
+
+{
+  "Name" : "Geologic sequestration", "Type" : ["Carbon Capture and Storage Projects"]
+}
+
+--------- Permission Type Collection ---------
+
+{
+	"Name": "Project Developer"
+}
+
+{
+	"Name": "Verifier"
+}
+
+{
+	"Name": "Registry Staff"
+}
