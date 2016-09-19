@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html lang="en" style="height:100%;" wp-site wp-site-is-master-page>
+    <head> 
+        <meta charset="utf-8"> 
+        <title>Project type</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="keywords" content="pinegrow, blocks, bootstrap" />
+        <meta name="description" content="My new website" />
+        <link rel="shortcut icon" href="ico/favicon.png"> 
+        <!-- Core CSS -->         
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet">
+        <!-- Style Library -->         
+        <link href="css/style-library-1.css" rel="stylesheet">
+        <link href="css/plugins.css" rel="stylesheet">
+        <link href="css/blocks.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->         
+        <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->         
+    </head>     
+    <body data-spy="scroll" data-target="nav">
+        <div class="content-block contact-3" wp-cz-section="blocks_contact_3" wp-cz-section-title="Contact 3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="contact" class="form-container">
+                            <fieldset wp-register-sidebar="Contact 3 Form" wp-register-sidebar-id="blocks_contact_3_form" wp-register-sidebar-before="<div>" wp-register-sidebar-after="</div>" wp-dynamic-sidebar="blocks_contact_3_form">
+                                <div class="form-group">
+                                    <label> 
+                                        <input class="control-label" type="checkbox" value="">        Carbon Offset        
+                                    </label>                                     
+                                    <label class="control-label" for="formInput467">
+                                        <h5>New Project</h5>
+                                        <label> 
+                                            <input class="control-label" type="checkbox" value="">       Sustainability        
+                                        </label>
+                                    </label>                                     
+                                    <select id="sectoral-scope" class="form-control"> 
+                                        <option> Agriculture, Forestry, Land Use</option>                                         
+                                        <option>Energy generation</option>                                         
+                                        <option>Transport</option>
+                                        <option>Fugitive emissions from industrial gases</option>
+                                    </select>
+                                    <select id="method" class="form-control"> 
+                                        <option> Rice Management Systems</option>                                         
+                                        <option>Switch from non-renewable biomass for thermal applications</option>
+                                        <option>Improved Efficiency of Vehicle Fleets</option>                                         
+                                        <option>Conversion of High-Bleed Pneumatic Controllers in Oil & Natural Gas Systems</option>                                         
+                                    </select>
+                                    <!-- end of project type & name -->
+                                    <!-- div for marming #acres.. message map -->
+                                </div>
+                                <div id="message"></div>
+                                <form method="post" action="js/contact-form.php" name="contactform" id="contactform">
+                                    <input type="date" class="form-control" placeholder="Date">
+                                    <div class="form-group">
+                                        <input name="project-name" id="project-name" type="text" value="" placeholder="Project Name" class="form-control" />
+                                    </div>
+                                    <h5>Description</h5>
+                                    <div class="form-group">
+                                        <input name="description" id="acres" type="text" value="" placeholder="Number of acres" class="form-control" />
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="comments" id="comments" class="form-control" rows="3" placeholder="Comments" id="textArea"></textarea>
+                                    </div>
+                                    <!-- empty div -->
+                                    <div class="form-group">
+                                        <div class="clearfix clear-columns"></div>
+                                        <div class="editContent">
+</div>
+                                    </div>
+                                    <!-- div for button -->
+                                    <div class="form-group">
+                                        <button class="btn btn-primary" type="submit" id="cf-submit" name="submit">Send</button>
+                                    </div>
+                                </form>
+                            </fieldset>
+                        </div>
+                        <!-- /.form-container -->
+                    </div>
+                    <div class="col-md-6">
+</div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>         
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>         
+        <script type="text/javascript" src="js/plugins.js"></script>
+        <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
+        <script type="text/javascript" src="js/bskit-scripts.js"></script>         
+    </body>     
+</html>

@@ -5,11 +5,15 @@ var router = express.Router();
                   PAGE ROUTING METHODS
 ********************************************************/
 router.get('/', function(req, res, next) {
-  res.sendfile('./public/welcome.html');
+  res.sendfile('./public/index.html');
 });
 
 router.get('/registration', function(req, res, next) {
-  res.sendfile('./public/login.html');
+  res.sendfile('./public/registration.html');
+});
+
+router.get('/projectmanagement', function(req, res, next) {
+  res.sendfile('./public/project-type.html');
 });
 
 /*******************************************************
