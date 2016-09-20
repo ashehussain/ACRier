@@ -1,28 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <title>Simple Polygon</title>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript" src="googleweb.js" defer></script>
-    <script type="text/javascript" src="api-key.js" ></script>
-
     <style>
-      html, body {
+    html,
+    body {
         height: 100%;
         margin: 0;
         padding: 0;
-      }
-      #map {
-        height: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="map"></div>
-    <div id='scripts' ></div>
+    }
     
-  </body>
+    #map {
+        height: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <!--   <div id="input">
+      <form id='geoCodeForm'>
+        <input type="text" name="latlong0" placeholder="latlng" >
+        <input type="text" name="latlong1" placeholder="latlng" >
+        <input type="text" name="latlong2" placeholder="latlng" >
+        <input type="submit" id='submit' name="submit">
+      </form>
+      <input type="submit" value='addNewLatlong' id='addNewLatlong' name="addNewLatlong">
+      <input type="submit" value='RemoveNewLatlong' id='removeNewLatlong' name="addNewLatlong">
+      
+    </div> -->
+    <form id="contactform" >
+        <h6>Sectoral scope</h6>
+        <select id="sectoral-scope" class="form-control">
+            <option> Agriculture, Forestry, Land Use</option>
+            <option>Energy generation</option>
+            <option>Transport</option>
+            <option>Fugitive emissions from industrial gases</option>
+        </select>
+        <h6>Methodology</h6>
+        <select id="method" class="form-control">
+            <label>label</label>
+            <option> Rice Management Systems</option>
+            <option>Switch from non-renewable biomass for thermal applications</option>
+            <option>Improved Efficiency of Vehicle Fleets</option>
+            <option>Conversion of High-Bleed Pneumatic Controllers in Oil & Natural Gas Systems</option>
+        </select>
+        <input type="submit">
+    </form>
+    <div style="height:100%; width:100%;">
+        <div id="map"></div>
+    </div>
+    <div id='scripts'></div>
+</body>
+
 </html>
